@@ -1,0 +1,1174 @@
+
+/*CSS variables import/export css*/
+
+
+/*CSS must include comments to define collections and modes:*/
+
+/* Collection name: Color Primitives */
+  /* Mode: Light */
+  :root {
+    --slate-100: #f3f3f3;
+    --slate-200: #e3e3e3;
+  }
+  /* Collection name: Color */
+  /* Mode: Dark */
+  :root {
+    --background-default: var(--slate-100);
+    --text-default: var(--slate-900);
+  }
+
+/*The plugin will:
+
+    Create Figma collections based on/* Collection name: X */
+    Create modes within collections based on/* Mode: Y */
+  /*  Support variable references usingvar(--variable-name)
+*/
+
+
+
+
+
+/* Collection name: 02. Token - Display / Size */
+/* Mode: desktop */
+:root {
+  --button-m-font: 16;
+  --font-size-body-body-h1: 48;
+  --font-size-body-body-h2: 40;
+  --font-size-body-body-h3: 34;
+  --font-size-body-body-h4: 28;
+  --font-size-body-body-h5: 24;
+  --font-size-body-body-h6: 20;
+  --button-l-top_bottom: var(--spacing-spacing-20);
+  --font-size-display-display-h6: 20;
+  --font-size-display-display-h4: 28;
+  --font-size-display-display-h3: 34;
+  --font-size-display-display-h2: 40;
+  --font-size-display-display-h5: 24;
+  --font-size-display-display-h1: 48;
+  --font-family-family-body: var();
+  --font-family-family-button: var(--general-font-family-button);
+  --font-family-family-headline: var(--general-font-family-headline);
+  --font-size-body-p-p-m: 16;
+  --font-size-body-p-p-l: 18;
+  --font-size-body-p-p-s: 14;
+  --icon-icon-m: 20;
+  --stroke-radius-radius-none: 0;
+  --stroke-radius-radius-2: 2;
+  --stroke-radius-radius-4: 4;
+  --stroke-radius-radius-8: 8;
+  --stroke-radius-radius-full: 100000;
+  --button-s-font: 14;
+  --button-l-font: 18;
+  --font-lineheight-display-m: 44;
+  --font-lineheight-body-m: 44;
+  --font-lineheight-p-m: 20;
+  --font-fontweight-fontweight-medium: Medium;
+  --font-fontweight-fontweight-bold: Bold;
+  --font-fontweight-fontweight-light: Light;
+  --stroke-radius-radius-24: 24;
+  --icon-icon-l: 24;
+  --icon-icon-s: 16;
+  --button-l-left_right: var(--spacing-spacing-40);
+  --stroke-radius-radius-12: 12;
+  --stroke-radius-radius-16: 16;
+  --stroke-radius-radius-20: 20;
+  --button-m-top_bottom: var(--spacing-spacing-16);
+  --button-m-left_right: var(--spacing-spacing-24);
+  --button-s-top_bottom: var(--spacing-spacing-12);
+  --button-s-left_right: var(--spacing-spacing-24);
+  --spacing-spacing-8: 8;
+  --spacing-spacing-20: 20;
+  --spacing-spacing-2: 2;
+  --spacing-spacing-4: 4;
+  --spacing-spacing-64: 64;
+  --spacing-spacing-48: 48;
+  --spacing-spacing-96: 96;
+  --spacing-spacing-80: 80;
+  --spacing-spacing-40: 40;
+  --spacing-spacing-32: 32;
+  --spacing-spacing-24: 24;
+  --spacing-spacing-112: 112;
+  --stroke-radius-radius-64: 64;
+  --stroke-radius-radius-48: 48;
+  --stroke-radius-radius-40: 40;
+  --stroke-radius-radius-32: 32;
+  --stroke-height-weight-m_: 2;
+  --stroke-height-weight-s_: 1;
+  --stroke-height-weight-l_: 4;
+  --stroke-height-weight-none_: 0;
+  --spacing-spacing-12: 12;
+  --spacing-spacing-16: 16;
+  --spacing-spacing-28: 28;
+  --display-width: 1440;
+  --display-max-width: 1200;
+  --font-size-display-old-display-h1-2: 100;
+  --font-size-display-old-display-h2-2: 76;
+  --font-size-display-old-display-h3-2: 56;
+  --font-size-display-old-display-h4-2: 42;
+  --font-size-display-old-display-h5-2: 32;
+  --font-size-display-old-display-h6-2: 24;
+  --font-size-display-p: 18;
+  --spacing-spacing-none: 0;
+  --display-section-spacing-topbottom-m: 40;
+  --button-border: 2;
+  --display-section-spacing-topbottom-l: 80;
+  --display-grid-grid-screenwidth: var(--display-width);
+  --display-grid-grid-columns: 12;
+  --display-grid-grid-padding: 132;
+  --display-grid-grid-gutter: 24;
+  --display-grid-grid-square: 8;
+  --display-grid-grid-maxwidth: var(--display-max-width);
+  --display-grid-grid-gutter_middle: 12;
+  --display-section-spacing-leftright-grid: var(--display-grid-grid-gutter_middle);
+  --display-section-spacing-topbottom-s: 20;
+  --button-nav-font: 14;
+  --button-nav-top_bottom: var(--spacing-spacing-2);
+  --button-nav-left_right: var(--spacing-spacing-4);
+  --button-nav-border: 1;
+  --button-nav-border-radius: var(--button-border-radius);
+  --button-border-radius: var(--stroke-radius-radius-4);
+  --button-l-border-radius: var(--button-border-radius);
+  --button-m-border-radius: var(--button-border-radius);
+  --button-s-border-radius: var(--button-border-radius);
+  --button-l-border: var(--button-border);
+  --button-m-border: var(--button-border);
+  --button-s-border: var(--button-border);
+  --display-row-col-12: 1176;
+  --display-row-col-11: 1076;
+  --display-row-col-10_m-12: 976;
+  --display-row-col-09: 876;
+  --display-row-col-08: 776;
+  --display-row-col-07: 676;
+  --display-row-col-06: 576;
+  --display-row-col-05: 476;
+  --display-row-col-04: 376;
+  --display-row-col-03: 276;
+  --display-row-col-02: 176;
+  --display-row-col-01: 76;
+  --display-visible-desktop: true;
+  --display-visible-desktoptablet: true;
+  --display-visible-tablet: false;
+  --display-visible-mobile_true: false;
+  --display-visible-tabletmobile: false;
+  --display-min-width: 480;
+  --display-visible-all: true;
+  --font-lineheight-body-s: 24;
+  --font-lineheight-display-s: 30;
+  --display-row-col-01_m-12: 76;
+  --display-row-col-03_m-12: 276;
+  --display-row-col-06_m-12: 576;
+  --display-row-col-05_m-12: 476;
+  --display-row-col-09_m-12: 876;
+  --display-row-col-07_m-12: 676;
+  --display-row-col-02_m-12: 176;
+  --display-row-col-08_m-12: 776;
+  --display-row-col-04_m-12: 376;
+  --display-row-col-11_m-12: 1076;
+  --display-row-col-10: 976;
+  --display-row-col-01_m-t-12: 76;
+  --display-row-col-02_m-t-12: 176;
+  --display-row-col-04_m-t-12: 376;
+  --display-row-col-03_m-t-12: 276;
+  --display-row-col-05_m-t-12: 476;
+  --display-row-col-07_m-t-12: 676;
+  --display-row-col-06_m-t-12: 576;
+  --display-row-col-08_m-t-12: 776;
+  --display-row-col-09_m-t-12: 876;
+  --display-row-col-10_m-t-12: 976;
+  --display-row-col-11_m-t-12: 1076;
+  --display-column-12-col-12: 1176;
+  --display-column-12-col-11: 1076;
+  --display-column-12-col-02: 176;
+  --display-column-12-col-01: 76;
+  --display-column-12-col-10: 976;
+  --display-column-12-col-09: 876;
+  --display-column-12-col-08: 776;
+  --display-column-12-col-07: 676;
+  --display-column-12-col-06: 576;
+  --display-column-12-col-05: 476;
+  --display-column-12-col-04: 376;
+  --display-column-12-col-03: 276;
+  --display-section-gap: var(--display-grid-grid-gutter);
+  --font-size-body-p-p-xs: 12;
+  --button-link-xs-font: var(--font-size-body-p-p-xs);
+  --button-link-m-font: var(--font-size-body-p-p-m);
+  --button-link-l-font: var(--font-size-body-p-p-l);
+  --button-link-s-font: var(--font-size-body-p-p-s);
+  --button-link-m-font-2: var(--font-size-body-p-p-s);
+  --font-size-button-top_bottom: var(--spacing-spacing-20);
+  --font-size-button-left_right: var(--spacing-spacing-40);
+  --font-size-button-border-radius: var(--button-border-radius);
+  --button-xs-font: 14;
+  --button-xs-top_bottom: var(--spacing-spacing-8);
+  --button-xs-left_right: var(--spacing-spacing-16);
+  --button-xs-border: var(--button-border);
+  --button-xs-border-radius: var(--button-border-radius);
+  --components-hero-visible-bg: true;
+  --components-hero-visible-img: false;
+  --components-hero-img-height: 680;
+  --components-hero-text-height: 680;
+  --hero-img-height: 680;
+}
+
+/* Collection name: 02. Token - Display / Size */
+/* Mode: tablet */
+:root {
+  --button-m-font: 14;
+  --font-size-body-body-h1: 42;
+  --font-size-body-body-h2: 34;
+  --font-size-body-body-h3: 30;
+  --font-size-body-body-h4: 24;
+  --font-size-body-body-h5: 20;
+  --font-size-body-body-h6: 16;
+  --button-l-top_bottom: var(--spacing-spacing-20);
+  --font-size-display-display-h6: 26;
+  --font-size-display-display-h4: 24;
+  --font-size-display-display-h3: 30;
+  --font-size-display-display-h2: 34;
+  --font-size-display-display-h5: 20;
+  --font-size-display-display-h1: 42;
+  --font-family-family-body: var(--general-font-family-body);
+  --font-family-family-button: var(--general-font-family-button);
+  --font-family-family-headline: var(--general-font-family-headline);
+  --font-size-body-p-p-m: 14;
+  --font-size-body-p-p-l: 16;
+  --font-size-body-p-p-s: 12;
+  --icon-icon-m: 18;
+  --stroke-radius-radius-none: 0;
+  --stroke-radius-radius-2: 2;
+  --stroke-radius-radius-4: 4;
+  --stroke-radius-radius-8: 8;
+  --stroke-radius-radius-full: 100000;
+  --button-s-font: 12;
+  --button-l-font: 18;
+  --font-lineheight-display-m: 44;
+  --font-lineheight-body-m: 44;
+  --font-lineheight-p-m: 20;
+  --font-fontweight-fontweight-medium: Medium;
+  --font-fontweight-fontweight-bold: Bold;
+  --font-fontweight-fontweight-light: Light;
+  --stroke-radius-radius-24: 24;
+  --icon-icon-l: 24;
+  --icon-icon-s: 16;
+  --button-l-left_right: var(--spacing-spacing-40);
+  --stroke-radius-radius-12: 12;
+  --stroke-radius-radius-16: 16;
+  --stroke-radius-radius-20: 20;
+  --button-m-top_bottom: var(--spacing-spacing-16);
+  --button-m-left_right: var(--spacing-spacing-24);
+  --button-s-top_bottom: var(--spacing-spacing-12);
+  --button-s-left_right: var(--spacing-spacing-24);
+  --spacing-spacing-8: 8;
+  --spacing-spacing-20: 20;
+  --spacing-spacing-2: 2;
+  --spacing-spacing-4: 4;
+  --spacing-spacing-64: 64;
+  --spacing-spacing-48: 48;
+  --spacing-spacing-96: 96;
+  --spacing-spacing-80: 80;
+  --spacing-spacing-40: 40;
+  --spacing-spacing-32: 32;
+  --spacing-spacing-24: 24;
+  --spacing-spacing-112: 112;
+  --stroke-radius-radius-64: 64;
+  --stroke-radius-radius-48: 48;
+  --stroke-radius-radius-40: 40;
+  --stroke-radius-radius-32: 32;
+  --stroke-height-weight-m_: 2;
+  --stroke-height-weight-s_: 1;
+  --stroke-height-weight-l_: 4;
+  --stroke-height-weight-none_: 0;
+  --spacing-spacing-12: 12;
+  --spacing-spacing-16: 16;
+  --spacing-spacing-28: 28;
+  --display-width: 760;
+  --display-max-width: 760;
+  --font-size-display-old-display-h1-2: 90;
+  --font-size-display-old-display-h2-2: 68;
+  --font-size-display-old-display-h3-2: 50;
+  --font-size-display-old-display-h4-2: 38;
+  --font-size-display-old-display-h5-2: 28;
+  --font-size-display-old-display-h6-2: 22;
+  --font-size-display-p: 16;
+  --spacing-spacing-none: 0;
+  --display-section-spacing-topbottom-m: 20;
+  --button-border: 2;
+  --display-section-spacing-topbottom-l: 40;
+  --display-grid-grid-screenwidth: var(--display-width);
+  --display-grid-grid-columns: 6;
+  --display-grid-grid-padding: 80;
+  --display-grid-grid-gutter: 20;
+  --display-grid-grid-square: 6;
+  --display-grid-grid-maxwidth: var(--display-width);
+  --display-grid-grid-gutter_middle: 10;
+  --display-section-spacing-leftright-grid: var(--display-grid-grid-gutter_middle);
+  --display-section-spacing-topbottom-s: 10;
+  --button-nav-font: 14;
+  --button-nav-top_bottom: var(--spacing-spacing-2);
+  --button-nav-left_right: var(--spacing-spacing-4);
+  --button-nav-border: 1;
+  --button-nav-border-radius: var(--button-border-radius);
+  --button-border-radius: var(--stroke-radius-radius-4);
+  --button-l-border-radius: var(--button-border-radius);
+  --button-m-border-radius: var(--button-border-radius);
+  --button-s-border-radius: var(--button-border-radius);
+  --button-l-border: var(--button-border);
+  --button-m-border: var(--button-border);
+  --button-s-border: var(--button-border);
+  --display-row-col-12: 740;
+  --display-row-col-11: var(--display-row-col-12);
+  --display-row-col-10_m-12: var(--display-row-col-10);
+  --display-row-col-09: var(--display-row-col-10);
+  --display-row-col-08: 487;
+  --display-row-col-07: var(--display-row-col-08);
+  --display-row-col-06: 360;
+  --display-row-col-05: var(--display-row-col-06);
+  --display-row-col-04: 234;
+  --display-row-col-03: var(--display-row-col-04);
+  --display-row-col-02: 107;
+  --display-row-col-01: var(--display-row-col-02);
+  --display-visible-desktop: false;
+  --display-visible-desktoptablet: true;
+  --display-visible-tablet: true;
+  --display-visible-mobile_true: false;
+  --display-visible-tabletmobile: true;
+  --display-min-width: 480;
+  --display-visible-all: true;
+  --font-lineheight-body-s: 30;
+  --font-lineheight-display-s: 30;
+  --display-row-col-01_m-12: var(--display-row-col-02_m-12);
+  --display-row-col-03_m-12: var(--display-row-col-04_m-12);
+  --display-row-col-06_m-12: var(--display-row-col-06);
+  --display-row-col-05_m-12: var(--display-row-col-06_m-12);
+  --display-row-col-09_m-12: var(--display-row-col-10_m-12);
+  --display-row-col-07_m-12: var(--display-row-col-08_m-12);
+  --display-row-col-02_m-12: var(--display-row-col-02);
+  --display-row-col-08_m-12: var(--display-row-col-08);
+  --display-row-col-04_m-12: var(--display-row-col-04);
+  --display-row-col-11_m-12: var(--display-row-col-12);
+  --display-row-col-10: 613;
+  --display-row-col-01_m-t-12: var(--display-row-col-02_m-t-12);
+  --display-row-col-02_m-t-12: var(--display-row-col-12);
+  --display-row-col-04_m-t-12: var(--display-row-col-12);
+  --display-row-col-03_m-t-12: var(--display-row-col-04_m-t-12);
+  --display-row-col-05_m-t-12: var(--display-row-col-06_m-t-12);
+  --display-row-col-07_m-t-12: var(--display-row-col-08_m-t-12);
+  --display-row-col-06_m-t-12: var(--display-row-col-12);
+  --display-row-col-08_m-t-12: var(--display-row-col-12);
+  --display-row-col-09_m-t-12: var(--display-row-col-10_m-t-12);
+  --display-row-col-10_m-t-12: var(--display-row-col-12);
+  --display-row-col-11_m-t-12: var(--display-row-col-12);
+  --display-column-12-col-12: 740;
+  --display-column-12-col-11: var(--display-row-col-12);
+  --display-column-12-col-02: 107;
+  --display-column-12-col-01: 107;
+  --display-column-12-col-10: 867;
+  --display-column-12-col-09: var(--display-row-col-10);
+  --display-column-12-col-08: 613;
+  --display-column-12-col-07: var(--display-row-col-08);
+  --display-column-12-col-06: 487;
+  --display-column-12-col-05: var(--display-row-col-06);
+  --display-column-12-col-04: 233;
+  --display-column-12-col-03: var(--display-row-col-04);
+  --display-section-gap: var(--display-grid-grid-gutter);
+  --font-size-body-p-p-xs: 10;
+  --button-link-xs-font: var(--font-size-body-p-p-xs);
+  --button-link-m-font: var(--font-size-body-p-p-m);
+  --button-link-l-font: var(--font-size-body-p-p-l);
+  --button-link-s-font: var(--font-size-body-p-p-s);
+  --button-link-m-font-2: var(--font-size-body-p-p-s);
+  --font-size-button-top_bottom: var(--spacing-spacing-20);
+  --font-size-button-left_right: var(--spacing-spacing-40);
+  --font-size-button-border-radius: var(--button-border-radius);
+  --button-xs-font: 12;
+  --button-xs-top_bottom: var(--spacing-spacing-4);
+  --button-xs-left_right: var(--spacing-spacing-8);
+  --button-xs-border: var(--button-border);
+  --button-xs-border-radius: var(--button-border-radius);
+  --components-hero-visible-bg: true;
+  --components-hero-visible-img: false;
+  --components-hero-img-height: 680;
+  --components-hero-text-height: 680;
+  --hero-img-height: 680;
+}
+
+/* Collection name: 02. Token - Display / Size */
+/* Mode: mobile */
+:root {
+  --button-m-font: 14;
+
+  --button-l-top_bottom: var(--spacing-spacing-20);
+
+  
+  --icon-icon-m: 16;
+  --stroke-radius-radius-none: 0;
+  --stroke-radius-radius-2: 2;
+  --stroke-radius-radius-4: 4;
+  --stroke-radius-radius-8: 8;
+  --stroke-radius-radius-full: 100000;
+  --button-s-font: 12;
+  --button-l-font: 18;
+ 
+
+  --stroke-radius-radius-24: 24;
+  --icon-icon-l: 24;
+  --icon-icon-s: 16;
+  --button-l-left_right: var(--spacing-spacing-40);
+  --stroke-radius-radius-12: 12;
+  --stroke-radius-radius-16: 16;
+  --stroke-radius-radius-20: 20;
+  --button-m-top_bottom: var(--spacing-spacing-16);
+  --button-m-left_right: var(--spacing-spacing-24);
+  --button-s-top_bottom: var(--spacing-spacing-12);
+  --button-s-left_right: var(--spacing-spacing-24);
+  --spacing-spacing-8: 8;
+  --spacing-spacing-20: 20;
+  --spacing-spacing-2: 2;
+  --spacing-spacing-4: 4;
+  --spacing-spacing-64: 64;
+  --spacing-spacing-48: 48;
+  --spacing-spacing-96: 96;
+  --spacing-spacing-80: 80;
+  --spacing-spacing-40: 40;
+  --spacing-spacing-32: 32;
+  --spacing-spacing-24: 24;
+  --spacing-spacing-112: 112;
+  --stroke-radius-radius-64: 64;
+  --stroke-radius-radius-48: 48;
+  --stroke-radius-radius-40: 40;
+  --stroke-radius-radius-32: 32;
+  --stroke-height-weight-m_: 2;
+  --stroke-height-weight-s_: 1;
+  --stroke-height-weight-l_: 4;
+  --stroke-height-weight-none_: 0;
+  --spacing-spacing-12: 12;
+  --spacing-spacing-16: 16;
+  --spacing-spacing-28: 28;
+  --display-width: 480;
+  --display-max-width: 480;
+
+  --spacing-spacing-none: 0;
+  --display-section-spacing-topbottom-m: 10;
+  --button-border: 1;
+  --display-section-spacing-topbottom-l: 20;
+  --display-grid-grid-screenwidth: var(--display-width);
+  --display-grid-grid-columns: 4;
+  --display-grid-grid-padding: 20;
+  --display-grid-grid-gutter: 16;
+  --display-grid-grid-square: 4;
+  --display-grid-grid-maxwidth: var(--display-width);
+  --display-grid-grid-gutter_middle: 8;
+  --display-section-spacing-leftright-grid: var(--display-grid-grid-gutter_middle);
+  --display-section-spacing-topbottom-s: 6;
+  --button-nav-font: 12;
+  --button-nav-top_bottom: var(--spacing-spacing-2);
+  --button-nav-left_right: var(--spacing-spacing-4);
+  --button-nav-border: 1;
+  --button-nav-border-radius: var(--button-border-radius);
+  --button-border-radius: var(--stroke-radius-radius-4);
+  --button-l-border-radius: var(--button-border-radius);
+  --button-m-border-radius: var(--button-border-radius);
+  --button-s-border-radius: var(--button-border-radius);
+  --button-l-border: var(--button-border);
+  --button-m-border: var(--button-border);
+  --button-s-border: var(--button-border);
+  --display-row-col-12: 464;
+  --display-row-col-11: var(--display-row-col-12);
+  --display-row-col-10_m-12: var(--display-row-col-12);
+  --display-row-col-09: 344;
+  --display-row-col-08: var(--display-row-col-09);
+  --display-row-col-07: var(--display-row-col-09);
+  --display-row-col-06: 224;
+  --display-row-col-05: var(--display-row-col-06);
+  --display-row-col-04: var(--display-row-col-06);
+  --display-row-col-03: 104;
+  --display-row-col-02: var(--display-row-col-03);
+  --display-row-col-01: var(--display-row-col-03);
+  --display-visible-desktop: false;
+  --display-visible-desktoptablet: false;
+  --display-visible-tablet: false;
+  --display-visible-mobile_true: true;
+  --display-visible-tabletmobile: true;
+  --display-min-width: 480;
+  --display-visible-all: true;
+  --font-lineheight-body-s: 30;
+  --font-lineheight-display-s: 30;
+  
+  --display-section-gap: var(--display-grid-grid-gutter);
+  --font-size-body-p-p-xs: 10;
+  --button-link-xs-font: var(--font-size-body-p-p-xs);
+  --button-link-m-font: var(--font-size-body-p-p-m);
+  --button-link-l-font: var(--font-size-body-p-p-l);
+  --button-link-s-font: var(--font-size-body-p-p-s);
+  --button-link-m-font-2: var(--font-size-body-p-p-s);
+  --font-size-button-top_bottom: var(--spacing-spacing-20);
+  --font-size-button-left_right: var(--spacing-spacing-40);
+  --font-size-button-border-radius: var(--button-border-radius);
+  --button-xs-font: 12;
+  --button-xs-top_bottom: var(--spacing-spacing-2);
+  --button-xs-left_right: var(--spacing-spacing-4);
+  --button-xs-border: var(--button-border);
+  --button-xs-border-radius: var(--button-border-radius);
+  --components-hero-visible-bg: false;
+  --components-hero-visible-img: true;
+  --components-hero-img-height: 680;
+  --components-hero-text-height: 100;
+  --hero-img-height: 680;
+  --general-color-black-950: var(--primary--colors-gray-950#060b14);
+  --general-color-white: #ffffff;
+}
+
+/* Collection name: 0. Primitives */
+/* Mode: Basic */
+:root {
+  
+  --componenchange-500: var(--colors-colection-gray-500#6d7280);
+  --componenchange-num: var(--colors-colection-gray-50#f9fafb);
+  --general-font-family-button: Open Sans;
+  --general-font-family-headline: Raleway;
+
+
+  
+  --general-font-family-body: Raleway;
+  --colors-colection-gray-950: #060b14;
+  --general-font-weight-number-regular: 500;
+  --general-font-weight-number-bold: 700;
+  --general-font-weight-number-light: 300;
+
+  --colors-colection-purple-alpha: rgba(168, 85, 247, 0.10);
+  --colors-colection-indigo-apha: rgba(99, 102, 241, 0.10);
+  --colors-colection-brand-alpha: rgba(255, 111, 0, 0.10);
+  --colors-colection-green-alpha: rgba(74, 239, 165, 0.10);
+  --colors-colection-info-alpha: rgba(35, 141, 255, 0.10);
+  --colors-colection-gray-alpha: rgba(109, 114, 128, 0.10);
+  --colors-colection-red-alpha: rgba(239, 68, 68, 0.10);
+  --colors-colection-orange-alpha: rgba(249, 115, 22, 0.10);
+  --colors-colection-yellow-alpha: rgba(234, 179, 8, 0.10);
+  --colors-colection-succes-alpha: rgba(34, 197, 94, 0.10);
+  --colors-colection-blue-alpha: rgba(59, 130, 246, 0.10);
+  --colors-colection-pink-alpha: rgba(236, 72, 153, 0.10);
+  --colors-colection-neutral-alpha: rgba(164, 164, 164, 0.10);
+  --general-font-weight-string-light: Light;
+  --general-font-weight-string-regular: Regular;
+  --general-font-weight-string-bold: Bold;
+  --general-color-gray-600: var(--colors-colection-gray-600#4b5563);
+  --general-color-primary: var(--colors-colection-brand-brand-500#ff6f00);
+  --general-color-black-900: var(--colors-colection-gray-900#111827);
+  --general-color-gray-200: var(--colors-colection-gray-200#e5e7eb);
+  --general-color-gray-800: var(--colors-colection-gray-800#1f2937);
+  --general-color-gray-100: var(--colors-colection-gray-100#f3f4f6);
+  --general-color-gray-50: var(--colors-colection-gray-50#f9fafb);
+  --general-color-primary-100: var(--colors-colection-brand-brand-100#ffedcc);
+  --general-color-primary-50: var(--colors-colection-brand-brand-50#fff7e8);
+  --general-color-gray-300: var(--colors-colection-gray-300#d2d5da);
+  --general-color-alert-sucess: var(--colors-colection-succes-500#22c55e);
+  --general-color-alert-sucess-light: var(--colors-colection-succes-100#dcfce7);
+  --general-color-alert-warning: var(--colors-colection-yellow-400#facc15);
+  --general-color-alert-warning-light: var(--colors-colection-yellow-100#fef9c3);
+  --general-color-alert-danger: var(--colors-colection-red-600#dc2626);
+  --general-color-alert-danger-light: var(--colors-colection-red-100#fee2e2);
+  --general-color-secundary: var(--colors-colection-green-600#36cd98);
+  --general-color-secundary-50: var(--colors-colection-green-50#ecfeef);
+  --general-color-accent: var(--colors-colection-indigo-500#6366f1);
+  --general-color-accent-50: var(--colors-colection-indigo-50#eef2ff);
+  --general-color-accent-800: var(--colors-colection-indigo-800#3730a3);
+  --general-color-secundary-800: var(--colors-colection-green-800#178a79);
+  --general-color-primary-600: var(--colors-colection-brand-brand-600#db5300);
+  --general-color-opacity: rgba(255, 255, 255, 0.00);
+  --general-color-primary-200: var(--colors-colection-brand-brand-200#ffd699);
+  --colors-colection-brand-brand-950: #480f00;
+  --general-color-primary-800: var(--colors-colection-brand-brand-800#932700);
+  --general-color-white-o50: rgba(255, 255, 255, 0.50);
+  --general-color-white-o0: rgba(255, 255, 255, 0.00);
+  --general-color-black-950-o50: rgba(6, 11, 20, 0.50);
+  --general-color-black-950-o0: rgba(6, 11, 20, 0.00);
+}
+
+/* Collection name: 02.  Token - Mode / Color */
+/* Mode: light */
+:root {
+  --basic-primary: var(--general-color-primary);
+  --background-mode_: var(--general-color-white);
+  --background-light: var(--general-color-gray-100);
+  --icon-light_: var(--general-color-gray-200);
+  --icon-medium_: var(--general-color-gray-600);
+  --icon-dark_: var(--general-color-black-900);
+  --basic-accent_: var(--general-color-accent);
+  --basic-primary-50: var(--colors-colection-brand-brand-50);
+  --background-old-dark_light: var(--colors-colection-gray-900);
+  --background-old-opacity-100: rgba(255, 255, 255, 0.00);
+  --button-default-normal-font: var(--font-primary-100[object-object]);
+  --button-default-normal-background: var(--basic-_brand_[object-object]);
+  --button-default-hover-font: var(--font-primary[object-object]);
+  --button-default-hover-background: var(--basic-primary-100[object-object]);
+  --basic-primary-200: var(--colors-colection-brand-brand-200);
+  --basic-mode_: var(--general-color-gray-100);
+  --basic-gray-100: var(--colors-colection-gray-100);
+  --basic-gray-950: var(--colors-colection-gray-950);
+  --basic-gray-700: var(--colors-colection-gray-700);
+  --basic-gray-800: var(--colors-colection-gray-800);
+  --basic-primary-100: var(--colors-colection-brand-brand-100);
+  --basic-white: var(--colors-colection-gray-50);
+  --basic-alert-warning: var(--general-color-alert-warning);
+  --button-default-disable-font: var(--font-gray-300[object-object]);
+  --button-default-disable-background: var(--basic-gray-100[object-object]);
+  --basic-alert-danger: var(--general-color-alert-danger);
+  --basic-alert-success: var(--general-color-alert-sucess);
+  --font-headline-default_: var(--colors-colection-gray-800);
+  --font-body-default_: var(--colors-colection-gray-700);
+  --basic-alert-success-light: var(--general-color-alert-sucess-light);
+  --basic-alert-warning-light: var(--general-color-alert-warning-light);
+  --basic-alert-danger-light: var(--general-color-alert-danger-light);
+  --background-dark: var(--general-color-black-900);
+  --basic-alert-info: var(--general-color-gray-800);
+  --basic-alert-info-light: var(--general-color-gray-100);
+  --basic-primary_: var(--general-color-primary);
+  --basic-secundary_: var(--general-color-secundary);
+  --font-body-primary_: var(--general-color-primary);
+  --font-headline-primary_: var(--general-color-primary-600);
+  --gradient-light-a: var(--general-color-gray-100);
+  --gradient-light-z: var(--general-color-gray-300);
+  --gradient-mode_-a: var(--general-color-gray-100);
+  --gradient-mode_-z: var(--general-color-gray-300);
+  --gradient-dark-a: var(--general-color-black-900);
+  --gradient-dark-z: var(--general-color-gray-800);
+  --gradient-primary-a: var(--general-color-primary);
+  --gradient-primary-z: var(--general-color-primary-600);
+  --icon-primary: var(--general-color-primary);
+  --font-headline-default: var(--colors-colection-gray-800);
+  --font-body-defaul: var(--colors-colection-gray-700);
+  --font-primary: var(--basic-primary[object-object]);
+  --font-white: var(--basic-white[object-object]);
+  --font-gray-950: var(--general-color-black-950);
+  --font-gray-800: var(--general-color-gray-800);
+  --font-gray-600: var(--general-color-gray-600);
+  --font-primary-100: var(--basic-primary-100[object-object]);
+  --font-primary-600: var(--basic-primary-600[object-object]);
+  --font-primary-m-2: var(--general-color-primary);
+  --button-default-normal-border: var(--basic-_brand_[object-object]);
+  --button-default-hover-border: var(--button-default-hover-background[object-object]);
+  --button-default-disable-border: var(--button-default-disable-background[object-object]);
+  --button-border-normal-font: var(--font-primary[object-object]);
+  --button-border-normal-background: var(--basic-mode_[object-object]);
+  --button-border-normal-border: var(--button-border-normal-font[object-object]);
+  --button-border-hover-font: var(--font-primary-100[object-object]);
+  --button-border-hover-background: var(--basic-primary[object-object]);
+  --button-border-hover-border: var(--button-border-hover-font[object-object]);
+  --button-border-disable-font: var(--font-gray-300[object-object]);
+  --button-border-disable-background: var(--basic-gray-100[object-object]);
+  --button-border-disable-border: var(--button-border-disable-font[object-object]);
+  --basic-mode-inv_: var(--general-color-black-950);
+  --basic-secundary: var(--general-color-secundary);
+  --button-nav-normal-font: var(--font-gray-800[object-object]);
+  --button-nav-normal-border: var(--button-nav-normal-background[object-object]);
+  --button-nav-normal-background: var(--basic-opacity[object-object]);
+  --button-nav-hover-font: var(--basic-primary[object-object]);
+  --button-nav-hover-background: var(--basic-opacity[object-object]);
+  --button-nav-disable-font: var(--general-color-gray-300);
+  --button-nav-disable-background: var(--basic-opacity[object-object]);
+  --basic-opacity: var(--general-color-opacity);
+  --basic-gray-50: var(--colors-colection-gray-50);
+  --basic-dark: var(--colors-colection-gray-950);
+  --basic-primary-600: var(--general-color-primary-600);
+  --button-nav-hover-border: var(--button-nav-hover-font[object-object]);
+  --button-nav-active-font: var(--basic-primary[object-object]);
+  --button-nav-active-border: var(--button-nav-active-background[object-object]);
+  --button-nav-active-background: var(--basic-opacity[object-object]);
+  --button-nav-disable-border: var(--button-nav-disable-background[object-object]);
+  --background-gray_light: var(--general-color-gray-600);
+  --button-buy-normal-font: var(--basic-primary-50[object-object]);
+  --button-default-normal-background-2: var(--basic-_brand_[object-object]);
+  --button-buy-normal-border: var(--button-buy-normal-background[object-object]);
+  --button-buy-normal-background: var(--basic-secundary[object-object]);
+  --button-buy-hover-font: var(--basic-secundary-800[object-object]);
+  --button-border: 2;
+  --button-buy-hover-border: var(--button-buy-hover-background[object-object]);
+  --button-buy-hover-background: var(--basic-secundary-50[object-object]);
+  --button-buy-disable-font: var(--basic-gray-300[object-object]);
+  --button-buy-disable-border: var(--button-buy-disable-background[object-object]);
+  --button-buy-disable-background: var(--basic-gray-50[object-object]);
+  --basic-secundary-50: var(--general-color-secundary-50);
+  --basic-secundary-800: var(--general-color-secundary-800);
+  --font-gray-400: var(--basic-gray-400[object-object]);
+  --basic-gray-400: var(--colors-colection-gray-400);
+  --basic-primary-800: var(--general-color-primary-800);
+  --basic-gray-300: var(--colors-colection-gray-300);
+  --font-gray-300: var(--basic-gray-300[object-object]);
+  --basic-gray-200: var(--colors-colection-gray-200);
+}
+
+/* Collection name: 02.  Token - Mode / Color */
+/* Mode: dark */
+:root {
+  --basic-primary: var(--general-color-primary);
+  --background-mode_: var(--colors-colection-gray-950);
+  --background-light: var(--colors-colection-gray-100);
+  --icon-light_: var(--general-color-black-900);
+  --icon-medium_: var(--general-color-gray-300);
+  --icon-dark_: var(--general-color-gray-100);
+  --basic-accent_: var(--general-color-accent-50);
+  --basic-primary-50: var(--colors-colection-brand-brand-50);
+  --background-old-dark_light: var(--colors-colection-gray-100);
+  --background-old-opacity-100: rgba(255, 255, 255, 0.00);
+  --button-default-normal-font: var(--font-primary-100[object-object]);
+  --button-default-normal-background: var(--basic-_brand_[object-object]);
+  --button-default-hover-font: var(--font-primary[object-object]);
+  --button-default-hover-background: var(--basic-primary-100[object-object]);
+  --basic-primary-200: var(--colors-colection-brand-brand-200);
+  --basic-mode_: var(--general-color-black-950);
+  --basic-gray-100: var(--colors-colection-gray-100);
+  --basic-gray-950: var(--colors-colection-gray-950);
+  --basic-gray-700: var(--colors-colection-gray-700);
+  --basic-gray-800: var(--colors-colection-gray-800);
+  --basic-primary-100: var(--colors-colection-brand-brand-100);
+  --basic-white: var(--colors-colection-gray-50);
+  --basic-alert-warning: var(--general-color-alert-warning);
+  --button-default-disable-font: var(--font-gray-300[object-object]);
+  --button-default-disable-background: var(--basic-gray-100[object-object]);
+  --basic-alert-danger: var(--general-color-alert-danger);
+  --basic-alert-success: var(--general-color-alert-sucess);
+  --font-headline-default_: var(--colors-colection-gray-50);
+  --font-body-default_: var(--colors-colection-gray-100);
+  --basic-alert-success-light: var(--general-color-alert-sucess-light);
+  --basic-alert-warning-light: var(--general-color-alert-warning-light);
+  --basic-alert-danger-light: var(--general-color-alert-danger-light);
+  --background-dark: var(--general-color-black-900);
+  --basic-alert-info: var(--general-color-gray-800);
+  --basic-alert-info-light: var(--general-color-gray-100);
+  --basic-primary_: var(--general-color-primary-100);
+  --basic-secundary_: var(--general-color-secundary-50);
+  --font-body-primary_: var(--general-color-primary-50);
+  --font-headline-primary_: var(--general-color-primary-100);
+  --gradient-light-a: var(--general-color-gray-100);
+  --gradient-light-z: var(--general-color-gray-300);
+  --gradient-mode_-a: var(--general-color-black-900);
+  --gradient-mode_-z: var(--general-color-gray-800);
+  --gradient-dark-a: var(--general-color-black-900);
+  --gradient-dark-z: var(--general-color-gray-800);
+  --gradient-primary-a: var(--general-color-primary);
+  --gradient-primary-z: var(--general-color-primary-600);
+  --icon-primary: var(--general-color-primary);
+  --font-headline-default: var(--colors-colection-gray-800);
+  --font-body-defaul: var(--colors-colection-gray-100);
+  --font-primary: var(--basic-primary[object-object]);
+  --font-white: var(--basic-white[object-object]);
+  --font-gray-950: var(--general-color-black-950);
+  --font-gray-800: var(--general-color-gray-800);
+  --font-gray-600: var(--general-color-gray-600);
+  --font-primary-100: var(--basic-primary-100[object-object]);
+  --font-primary-600: var(--basic-primary-600[object-object]);
+  --font-primary-m-2: var(--general-color-primary);
+  --button-default-normal-border: var(--basic-_brand_[object-object]);
+  --button-default-hover-border: var(--button-default-hover-background[object-object]);
+  --button-default-disable-border: var(--button-default-disable-background[object-object]);
+  --button-border-normal-font: var(--font-primary[object-object]);
+  --button-border-normal-background: var(--basic-mode_[object-object]);
+  --button-border-normal-border: var(--button-border-normal-font[object-object]);
+  --button-border-hover-font: var(--font-primary-100[object-object]);
+  --button-border-hover-background: var(--basic-mode_[object-object]);
+  --button-border-hover-border: var(--button-border-hover-font[object-object]);
+  --button-border-disable-font: var(--font-gray-300[object-object]);
+  --button-border-disable-background: var(--basic-gray-100[object-object]);
+  --button-border-disable-border: var(--button-border-disable-font[object-object]);
+  --basic-mode-inv_: var(--general-color-gray-100);
+  --basic-secundary: var(--general-color-secundary);
+  --button-nav-normal-font: var(--font-primary-100[object-object]);
+  --button-nav-normal-border: var(--button-nav-normal-background[object-object]);
+  --button-nav-normal-background: var(--basic-opacity[object-object]);
+  --button-nav-hover-font: var(--basic-primary[object-object]);
+  --button-nav-hover-background: var(--basic-opacity[object-object]);
+  --button-nav-disable-font: var(--general-color-gray-300);
+  --button-nav-disable-background: var(--basic-opacity[object-object]);
+  --basic-opacity: var(--general-color-opacity);
+  --basic-gray-50: var(--colors-colection-gray-50);
+  --basic-dark: var(--colors-colection-gray-950);
+  --basic-primary-600: var(--general-color-primary-600);
+  --button-nav-hover-border: var(--button-nav-hover-font[object-object]);
+  --button-nav-active-font: var(--basic-primary[object-object]);
+  --button-nav-active-border: var(--button-nav-active-background[object-object]);
+  --button-nav-active-background: var(--basic-opacity[object-object]);
+  --button-nav-disable-border: var(--button-nav-disable-background[object-object]);
+  --background-gray_light: var(--general-color-gray-600);
+  --button-buy-normal-font: var(--basic-primary-50[object-object]);
+  --button-default-normal-background-2: var(--basic-_brand_[object-object]);
+  --button-buy-normal-border: var(--button-buy-normal-background[object-object]);
+  --button-buy-normal-background: var(--basic-secundary[object-object]);
+  --button-buy-hover-font: var(--basic-secundary-800[object-object]);
+  --button-border: 2;
+  --button-buy-hover-border: var(--button-buy-hover-background[object-object]);
+  --button-buy-hover-background: var(--basic-secundary-50[object-object]);
+  --button-buy-disable-font: var(--basic-gray-300[object-object]);
+  --button-buy-disable-border: var(--button-buy-disable-background[object-object]);
+  --button-buy-disable-background: var(--basic-gray-50[object-object]);
+  --basic-secundary-50: var(--general-color-secundary-50);
+  --basic-secundary-800: var(--general-color-secundary-800);
+  --font-gray-400: var(--basic-gray-400[object-object]);
+  --basic-gray-400: var(--colors-colection-gray-400);
+  --basic-primary-800: var(--general-color-primary-800);
+  --basic-gray-300: var(--colors-colection-gray-300);
+  --font-gray-300: var(--basic-gray-300[object-object]);
+  --basic-gray-200: var(--colors-colection-gray-200);
+}
+
+/* Collection name: 02.  Token - Mode / Color */
+/* Mode: contrast */
+:root {
+  --basic-primary: var(--general-color-primary-600);
+  --background-mode_: var(--general-color-white);
+  --background-light: var(--general-color-white);
+  --icon-light_: var(--general-color-gray-50);
+  --icon-medium_: var(--general-color-black-900);
+  --icon-dark_: var(--general-color-gray-50);
+  --basic-accent_: var(--general-color-accent-800);
+  --basic-primary-50: var(--colors-colection-brand-brand-50);
+  --background-old-dark_light: var(--colors-colection-gray-950);
+  --background-old-opacity-100: rgba(255, 255, 255, 0.00);
+  --button-default-normal-font: var(--font-primary-100[object-object]);
+  --button-default-normal-background: var(--basic-_brand_[object-object]);
+  --button-default-hover-font: var(--font-primary[object-object]);
+  --button-default-hover-background: var(--basic-primary-200[object-object]);
+  --basic-primary-200: var(--colors-colection-brand-brand-200);
+  --basic-mode_: var(--general-color-white);
+  --basic-gray-100: var(--general-color-white);
+  --basic-gray-950: var(--colors-colection-gray-950);
+  --basic-gray-700: var(--colors-colection-gray-950);
+  --basic-gray-800: var(--colors-colection-gray-950);
+  --basic-primary-100: var(--colors-colection-brand-brand-100);
+  --basic-white: var(--general-color-white);
+  --basic-alert-warning: var(--general-color-alert-warning);
+  --button-default-disable-font: var(--basic-gray-300[object-object]);
+  --button-default-disable-background: var(--basic-gray-100[object-object]);
+  --basic-alert-danger: var(--general-color-alert-danger);
+  --basic-alert-success: var(--general-color-alert-sucess);
+  --font-headline-default_: var(--colors-colection-gray-950);
+  --font-body-default_: var(--colors-colection-gray-900);
+  --basic-alert-success-light: var(--general-color-white);
+  --basic-alert-warning-light: var(--general-color-white);
+  --basic-alert-danger-light: var(--general-color-white);
+  --background-dark: var(--general-color-black-900);
+  --basic-alert-info: var(--general-color-gray-800);
+  --basic-alert-info-light: var(--general-color-white);
+  --basic-primary_: var(--general-color-primary-600);
+  --basic-secundary_: var(--general-color-secundary-800);
+  --font-body-primary_: var(--general-color-black-900);
+  --font-headline-primary_: var(--general-color-black-900);
+  --gradient-light-a: var(--general-color-white);
+  --gradient-light-z: var(--general-color-white);
+  --gradient-mode_-a: var(--general-color-white);
+  --gradient-mode_-z: var(--general-color-white);
+  --gradient-dark-a: var(--general-color-black-900);
+  --gradient-dark-z: var(--general-color-black-900);
+  --gradient-primary-a: var(--general-color-primary);
+  --gradient-primary-z: var(--general-color-primary);
+  --icon-primary: var(--general-color-primary);
+  --font-headline-default: var(--colors-colection-gray-950);
+  --font-body-defaul: var(--colors-colection-gray-900);
+  --font-primary: var(--basic-primary-600[object-object]);
+  --font-white: var(--basic-white[object-object]);
+  --font-gray-950: var(--general-color-black-950);
+  --font-gray-800: var(--general-color-gray-800);
+  --font-gray-600: var(--general-color-gray-600);
+  --font-primary-100: var(--basic-white[object-object]);
+  --font-primary-600: var(--colors-colection-brand-brand-800);
+  --font-primary-m-2: var(--general-color-primary-600);
+  --button-default-normal-border: var(--basic-_brand_[object-object]);
+  --button-default-hover-border: var(--button-default-hover-background[object-object]);
+  --button-default-disable-border: var(--button-default-disable-background[object-object]);
+  --button-border-normal-font: var(--font-primary[object-object]);
+  --button-border-normal-background: var(--basic-mode_[object-object]);
+  --button-border-normal-border: var(--button-border-normal-font[object-object]);
+  --button-border-hover-font: var(--font-primary-100[object-object]);
+  --button-border-hover-background: var(--basic-mode_[object-object]);
+  --button-border-hover-border: var(--button-border-hover-font[object-object]);
+  --button-border-disable-font: var(--font-gray-300[object-object]);
+  --button-border-disable-background: var(--basic-gray-100[object-object]);
+  --button-border-disable-border: var(--button-border-disable-font[object-object]);
+  --basic-mode-inv_: var(--general-color-white);
+  --basic-secundary: var(--general-color-secundary);
+  --button-nav-normal-font: var(--font-gray-950[object-object]);
+  --button-nav-normal-border: var(--button-nav-normal-background[object-object]);
+  --button-nav-normal-background: var(--basic-opacity[object-object]);
+  --button-nav-hover-font: var(--basic-primary-600[object-object]);
+  --button-nav-hover-background: var(--basic-opacity[object-object]);
+  --button-nav-disable-font: var(--general-color-gray-300);
+  --button-nav-disable-background: var(--basic-opacity[object-object]);
+  --basic-opacity: var(--general-color-opacity);
+  --basic-gray-50: var(--general-color-white);
+  --basic-dark: var(--colors-colection-gray-950);
+  --basic-primary-600: var(--general-color-primary-600);
+  --button-nav-hover-border: var(--button-nav-hover-font[object-object]);
+  --button-nav-active-font: var(--basic-primary-600[object-object]);
+  --button-nav-active-border: var(--button-nav-active-background[object-object]);
+  --button-nav-active-background: var(--basic-opacity[object-object]);
+  --button-nav-disable-border: var(--button-nav-disable-background[object-object]);
+  --background-gray_light: var(--general-color-gray-50);
+  --button-buy-normal-font: var(--basic-primary-50[object-object]);
+  --button-default-normal-background-2: var(--basic-_brand_[object-object]);
+  --button-buy-normal-border: var(--button-buy-normal-background[object-object]);
+  --button-buy-normal-background: var(--basic-secundary[object-object]);
+  --button-buy-hover-font: var(--basic-secundary-800[object-object]);
+  --button-border: 1;
+  --button-buy-hover-border: var(--button-buy-hover-background[object-object]);
+  --button-buy-hover-background: var(--basic-secundary-50[object-object]);
+  --button-buy-disable-font: var(--basic-gray-400[object-object]);
+  --button-buy-disable-border: var(--button-buy-disable-background[object-object]);
+  --button-buy-disable-background: var(--basic-gray-50[object-object]);
+  --basic-secundary-50: var(--general-color-secundary-50);
+  --basic-secundary-800: var(--general-color-secundary-800);
+  --font-gray-400: var(--basic-gray-400[object-object]);
+  --basic-gray-400: var(--general-color-white);
+  --basic-primary-800: var(--general-color-primary-800);
+  --basic-gray-300: var(--general-color-white);
+  --font-gray-300: var(--basic-gray-400[object-object]);
+  --basic-gray-200: var(--general-color-white);
+}
+
+/* Collection name: 02.  Token - Mode / Color */
+/* Mode: brand */
+:root {
+  --basic-primary: var(--general-color-primary-50);
+  --background-mode_: var(--colors-colection-brand-brand-500);
+  --background-light: var(--colors-colection-gray-100);
+  --icon-light_: var(--general-color-primary-100);
+  --icon-medium_: var(--general-color-primary-100);
+  --icon-dark_: var(--general-color-primary-100);
+  --basic-accent_: var(--general-color-accent-50);
+  --basic-primary-50: var(--colors-colection-brand-brand-50);
+  --background-old-dark_light: var(--colors-colection-gray-100);
+  --background-old-opacity-100: rgba(255, 255, 255, 0.00);
+  --button-default-normal-font: var(--font-primary-100[object-object]);
+  --button-default-normal-background: var(--basic-_brand_[object-object]);
+  --button-default-hover-font: var(--font-primary[object-object]);
+  --button-default-hover-background: var(--basic-primary-200[object-object]);
+  --basic-primary-200: var(--colors-colection-brand-brand-200);
+  --basic-mode_: var(--general-color-primary);
+  --basic-gray-100: var(--colors-colection-gray-50);
+  --basic-gray-950: var(--colors-colection-gray-950);
+  --basic-gray-700: var(--colors-colection-gray-700);
+  --basic-gray-800: var(--colors-colection-gray-800);
+  --basic-primary-100: var(--colors-colection-brand-brand-100);
+  --basic-white: var(--colors-colection-gray-50);
+  --basic-alert-warning: var(--general-color-alert-warning);
+  --button-default-disable-font: var(--font-gray-300[object-object]);
+  --button-default-disable-background: var(--basic-gray-100[object-object]);
+  --basic-alert-danger: var(--general-color-alert-danger);
+  --basic-alert-success: var(--general-color-alert-sucess);
+  --font-headline-default_: var(--colors-colection-gray-50);
+  --font-body-default_: var(--colors-colection-gray-100);
+  --basic-alert-success-light: var(--general-color-alert-sucess-light);
+  --basic-alert-warning-light: var(--general-color-alert-warning-light);
+  --basic-alert-danger-light: var(--general-color-alert-danger-light);
+  --background-dark: var(--general-color-black-900);
+  --basic-alert-info: var(--general-color-gray-800);
+  --basic-alert-info-light: var(--general-color-gray-100);
+  --basic-primary_: var(--general-color-primary-50);
+  --basic-secundary_: var(--general-color-secundary-50);
+  --font-body-primary_: var(--general-color-primary-50);
+  --font-headline-primary_: var(--general-color-primary-50);
+  --gradient-light-a: var(--general-color-gray-100);
+  --gradient-light-z: var(--general-color-gray-300);
+  --gradient-mode_-a: var(--general-color-primary);
+  --gradient-mode_-z: var(--general-color-primary);
+  --gradient-dark-a: var(--general-color-black-900);
+  --gradient-dark-z: var(--general-color-gray-800);
+  --gradient-primary-a: var(--general-color-primary);
+  --gradient-primary-z: var(--general-color-primary-600);
+  --icon-primary: var(--general-color-primary);
+  --font-headline-default: var(--colors-colection-gray-50);
+  --font-body-defaul: var(--colors-colection-gray-100);
+  --font-primary: var(--basic-primary-50[object-object]);
+  --font-white: var(--basic-white[object-object]);
+  --font-gray-950: var(--basic-white[object-object]);
+  --font-gray-800: var(--basic-white[object-object]);
+  --font-gray-600: var(--basic-white[object-object]);
+  --font-primary-100: var(--basic-primary-100[object-object]);
+  --font-primary-600: var(--basic-primary-800[object-object]);
+  --font-primary-m-2: var(--general-color-primary-50);
+  --button-default-normal-border: var(--basic-_brand_[object-object]);
+  --button-default-hover-border: var(--button-default-hover-background[object-object]);
+  --button-default-disable-border: var(--button-default-disable-background[object-object]);
+  --button-border-normal-font: var(--font-primary[object-object]);
+  --button-border-normal-background: var(--basic-mode_[object-object]);
+  --button-border-normal-border: var(--button-border-normal-font[object-object]);
+  --button-border-hover-font: var(--font-primary-100[object-object]);
+  --button-border-hover-background: var(--basic-mode_[object-object]);
+  --button-border-hover-border: var(--button-border-hover-font[object-object]);
+  --button-border-disable-font: var(--font-gray-300[object-object]);
+  --button-border-disable-background: var(--basic-gray-100[object-object]);
+  --button-border-disable-border: var(--button-border-disable-font[object-object]);
+  --basic-mode-inv_: var(--general-color-primary-50);
+  --basic-secundary: var(--general-color-secundary);
+  --button-nav-normal-font: var(--font-primary-100[object-object]);
+  --button-nav-normal-border: var(--button-nav-normal-background[object-object]);
+  --button-nav-normal-background: var(--basic-opacity[object-object]);
+  --button-nav-hover-font: var(--basic-primary-50[object-object]);
+  --button-nav-hover-background: var(--basic-opacity[object-object]);
+  --button-nav-disable-font: var(--general-color-gray-300);
+  --button-nav-disable-background: var(--general-color-opacity);
+  --basic-opacity: var(--general-color-opacity);
+  --basic-gray-50: var(--colors-colection-gray-50);
+  --basic-dark: var(--colors-colection-gray-950);
+  --basic-primary-600: var(--general-color-primary-600);
+  --button-nav-hover-border: var(--button-nav-hover-font[object-object]);
+  --button-nav-active-font: var(--basic-primary-50[object-object]);
+  --button-nav-active-border: var(--button-nav-active-background[object-object]);
+  --button-nav-active-background: var(--basic-opacity[object-object]);
+  --button-nav-disable-border: var(--button-nav-disable-background[object-object]);
+  --background-gray_light: var(--general-color-gray-300);
+  --button-buy-normal-font: var(--basic-primary-50[object-object]);
+  --button-default-normal-background-2: var(--basic-_brand_[object-object]);
+  --button-buy-normal-border: var(--button-buy-normal-background[object-object]);
+  --button-buy-normal-background: var(--basic-secundary[object-object]);
+  --button-buy-hover-font: var(--basic-secundary-800[object-object]);
+  --button-border: 1;
+  --button-buy-hover-border: var(--button-buy-hover-background[object-object]);
+  --button-buy-hover-background: var(--basic-secundary-50[object-object]);
+  --button-buy-disable-font: var(--basic-gray-300[object-object]);
+  --button-buy-disable-border: var(--button-buy-disable-background[object-object]);
+  --button-buy-disable-background: var(--basic-gray-50[object-object]);
+  --basic-secundary-50: var(--general-color-secundary-50);
+  --basic-secundary-800: var(--general-color-secundary-800);
+  --font-gray-400: var(--basic-gray-400[object-object]);
+  --basic-gray-400: var(--colors-colection-gray-400);
+  --basic-primary-800: var(--general-color-primary-800);
+  --basic-gray-300: var(--colors-colection-gray-300);
+  --font-gray-300: var(--basic-gray-300[object-object]);
+  --basic-gray-200: var(--colors-colection-gray-200);
+}
+
+/* Collection name: X Presentacion */
+/* Mode: light */
+:root {
+  --table-column-m: 109;
+  --table-spacing: var(--spacing-spacing-4);
+  --table-column-s: 70;
+  --table-column-xs: 50;
+  --elements-component-bar: var(--basic-primary-200);
+  --section-gap: var(--display-grid-grid-gutter_middle);
+  --section-border-radius-border-radius-l: var(--stroke-radius-radius-64);
+  --section-border-radius-border-radius-m: var(--stroke-radius-radius-24);
+  --section-background-gray: var(--background-gray_light);
+  --color-backgroung-mode_: var(--basic-gray-300);
+  --color-font-normal: var(--basic-gray-700);
+  --color-font-dark-l: var(--basic-gray-950);
+  --color-font-dark-m: var(--basic-gray-800);
+  --color-font-light: var(--basic-gray-400);
+  --color-font-primary: var(--basic-primary);
+  --section-spacing-padding-page: 70;
+  --section-border-radius-border-radius-s: var(--stroke-radius-radius-16);
+  --section-background-mode_: var(--basic-mode_);
+  --section-spacing-padding-element: 20;
+  --section-background-mode-inv_: var(--font-gray-950);
+}
+
+/* Collection name: X Presentacion */
+/* Mode: dark */
+:root {
+  --table-column-m: 109;
+  --table-spacing: var(--spacing-spacing-4);
+  --table-column-s: 70;
+  --table-column-xs: 50;
+  --elements-component-bar: var(--basic-primary-200);
+  --section-gap: var(--display-grid-grid-gutter_middle);
+  --section-border-radius-border-radius-l: var(--stroke-radius-radius-64);
+  --section-border-radius-border-radius-m: var(--stroke-radius-radius-24);
+  --section-background-gray: var(--background-gray_light);
+  --color-backgroung-mode_: var(--basic-gray-950);
+  --color-font-normal: var(--basic-gray-300);
+  --color-font-dark-l: var(--basic-gray-50);
+  --color-font-dark-m: var(--basic-gray-200);
+  --color-font-light: var(--basic-gray-700);
+  --color-font-primary: var(--basic-primary-200);
+  --section-spacing-padding-page: 70;
+  --section-border-radius-border-radius-s: var(--stroke-radius-radius-16);
+  --section-background-mode_: var(--basic-dark);
+  --section-spacing-padding-element: 20;
+  --section-background-mode-inv_: var(--font-gray-300);
+}
+
+/* Collection name: X Presentacion */
+/* Mode: brand */
+:root {
+  --table-column-m: 109;
+  --table-spacing: var(--spacing-spacing-4);
+  --table-column-s: 70;
+  --table-column-xs: 50;
+  --elements-component-bar: var(--basic-primary-200);
+  --section-gap: var(--display-grid-grid-gutter_middle);
+  --section-border-radius-border-radius-l: var(--stroke-radius-radius-64);
+  --section-border-radius-border-radius-m: var(--stroke-radius-radius-24);
+  --section-background-gray: var(--background-gray_light);
+  --color-backgroung-mode_: var(--basic-primary);
+  --color-font-normal: var(--basic-primary-200);
+  --color-font-dark-l: var(--basic-primary-50);
+  --color-font-dark-m: var(--basic-primary-100);
+  --color-font-light: var(--basic-primary-600);
+  --color-font-primary: var(--basic-primary-50);
+  --section-spacing-padding-page: 70;
+  --section-border-radius-border-radius-s: var(--stroke-radius-radius-16);
+  --section-background-mode_: var(--basic-primary);
+  --section-spacing-padding-element: 20;
+  --section-background-mode-inv_: var(--basic-primary);
+}
+
+/* Collection name: 03. Content - Text / Language */
+/* Mode: ES */
+:root {
+  --hero-title: Domina la anatomía artística y crea dibujos con confianza;
+  --hero-subtitle: -;
+  --hero-description: Descubre cómo dibujar la figura humana con confianza y precisión. Aprende con un método estructurado, accesible para todos los niveles, y diseñado para que logres resultados visibles desde las primeras semanas.;
+  --hero-buttontext01: Más información;
+  --hero-buttontext02: Empieza ahora;
+}
+
+/* Collection name: 03. Content - Text / Language */
+/* Mode: ENG */
+:root {
+  --hero-title: Domina la anatomía artística y crea dibujos con confianza;
+  --hero-subtitle: -;
+  --hero-description: Descubre cómo dibujar la figura humana con confianza y precisión. Aprende con un método estructurado, accesible para todos los niveles, y diseñado para que logres resultados visibles desde las primeras semanas.;
+  --hero-buttontext01: Más información;
+  --hero-buttontext02: Empieza ahora;
+}
+
+/* Collection name: 10. Show Extras */
+/* Mode: show */
+:root {
+  --grid: true;
+}
+
+/* Collection name: 10. Show Extras */
+/* Mode: hidden */
+:root {
+  --grid: false;
+}
+
+/* Collection name: 04. State - Display */
+/* Mode: desktop */
+:root {
+  --button_cta: false;
+  --hero-max-height: 680;
+  --hero-bg-visible-bg: true;
+  --hero-bg-visible-img: false;
+  --hero-img-height: 680;
+}
+
+/* Collection name: 04. State - Display */
+/* Mode: tablet */
+:root {
+  --button_cta: false;
+  --hero-max-height: 680;
+  --hero-bg-visible-bg: true;
+  --hero-bg-visible-img: false;
+  --hero-img-height: 680;
+}
+
+/* Collection name: 04. State - Display */
+/* Mode: mobile */
+:root {
+  --button_cta: false;
+  --hero-max-height: 50;
+  --hero-bg-visible-bg: false;
+  --hero-bg-visible-img: true;
+  --hero-img-height: 680;
+}

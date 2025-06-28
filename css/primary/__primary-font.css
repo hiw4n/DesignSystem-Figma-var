@@ -1,12 +1,42 @@
-
 :root{
-    /*SIZE*/
-      --Font__Size__Body__body-h1: 48px;
-      --Font__Size__Body__body-h2: 40px;
-      --Font__Size__Body__body-h3: 34px;
-      --Font__Size__Body__body-h4: 28px;
-      --Font__Size__Body__body-h5: 24px;
-      --Font__Size__Body__body-h6: 20px;
-
-
-  }
+/* FONTFAMILY*/
+  --primary--font-family-display:   var(--primary--font-family-body);
+  --primary--font-family-headline:  var(--primary--font-family-body);
+  --primary--font-family-body:      Raleway;
+  --primary--font-family-button:    Open Sans;
+  --primary--font-family-a:         var(--primary--font-family-body);
+/* SIZE */
+  /*DISPLAY*/
+  --primary--font-size-display-h1: 40px;
+  --primary--font-size-display-h2: 32px;
+  --primary--font-size-display-h3: 32px;
+  --primary--font-size-display-h4: 22px;
+  --primary--font-size-display-h5: 22px;
+  --primary--font-size-display-h6: 14px;
+  --primary--font-size-display-p:  16px;
+  --primary--font-size-display-a:  var(--primary--font-size-display-p);
+  /*BODY*/
+  --primary--font-size-body-h1: 48px;
+  --primary--font-size-body-h2: 40px;
+  --primary--font-size-body-h3: 34px;
+  --primary--font-size-body-h4: 28px;
+  --primary--font-size-body-h5: 24px;
+  --primary--font-size-body-h6: 20px;
+  --primary--font-size-body-p--big:   16px;
+  --primary--font-size-body-p:        16px;
+  --primary--font-size-body-p--small: 16px;
+  --primary--font-size-body-a: var(--primary--font-size-body-p);
+/*LINEHEIGHT*/
+  --primary--font-lineheight-display:  44px;
+  --primary--font-lineheight-body:     44px;
+  --primary--font-lineheight-p:        20px;
+/* COLOR */
+  --primary--font-color-h: 48px;
+  --primary--font-color-p: 40px;
+  --primary--font-color-a: 34px;
+  --primary--font-color-a--hover: 34px;
+/* WEIGHT */
+  --primary--font-fontweight-medium: Medium;
+  --primary--font-fontweight-bold: Bold;
+  --primary--font-fontweight-light: Light;
+}
