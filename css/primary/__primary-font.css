@@ -1,42 +1,52 @@
+@import url('./__primary-font--clamp.css');
 :root{
+/* Unid -> rem */
+ --pr-font--size: 16px;
+ --pr-font-ratio: 1.25; /* Ratio for scaling font sizes */
+
 /* FONTFAMILY*/
-  --primary--font-family-display:   var(--primary--font-family-body);
-  --primary--font-family-headline:  var(--primary--font-family-body);
-  --primary--font-family-body:      Raleway;
-  --primary--font-family-button:    Open Sans;
-  --primary--font-family-a:         var(--primary--font-family-body);
+  --pr-font--family-display:   var(--pr-font--family-body);
+  --pr-font--family-headline:  var(--pr-font--family-body);
+  --pr-font--family-body:      Raleway;
+  --pr-font--family-button:    Open Sans;
+  --pr-font--family-a:         var(--pr-font--family-body);
 /* SIZE */
+  /* font-size: clamp(MIN, IDEAL, MAX); */
+  /* Media -> clamp(MIN, (MIN + MAX)/2, MAX) */
+  /* Preciso -> clamp(MIN, SLOPE × vw + INTERCEPT, MAX) con regla de tres y pendiente*/
+  
   /*DISPLAY*/
-  --primary--font-size-display-h1: 40px;
-  --primary--font-size-display-h2: 32px;
-  --primary--font-size-display-h3: 32px;
-  --primary--font-size-display-h4: 22px;
-  --primary--font-size-display-h5: 22px;
-  --primary--font-size-display-h6: 14px;
-  --primary--font-size-display-p:  16px;
-  --primary--font-size-display-a:  var(--primary--font-size-display-p);
+  /* --pr-font--size-display-h1: 40px;
+  --pr-font--size-display-h2: 32px;
+  --pr-font--size-display-h3: 32px;
+  --pr-font--size-display-h4: 22px;
+  --pr-font--size-display-h5: 22px;
+  --pr-font--size-display-h6: 14px;
+  --pr-font--size-display-p:  1rem; 
+  --pr-font--size-display-a:  var(--pr-font--size-display-p); */
   /*BODY*/
-  --primary--font-size-body-h1: 48px;
-  --primary--font-size-body-h2: 40px;
-  --primary--font-size-body-h3: 34px;
-  --primary--font-size-body-h4: 28px;
-  --primary--font-size-body-h5: 24px;
-  --primary--font-size-body-h6: 20px;
-  --primary--font-size-body-p--big:   16px;
-  --primary--font-size-body-p:        16px;
-  --primary--font-size-body-p--small: 16px;
-  --primary--font-size-body-a: var(--primary--font-size-body-p);
+  /* --pr-font--size-body-h1: 48px;
+  --pr-font--size-body-h2: 40px;
+  --pr-font--size-body-h3: 34px;
+  --pr-font--size-body-h4: 28px;
+  --pr-font--size-body-h5: 24px;
+  --pr-font--size-body-h6: 20px;
+  --pr-font--size-body-p--big:   16px; 
+  --pr-font--size-body-p:        16px; 
+  --pr-font--size-body-p--small: 16px; 
+  --pr-font--size-body-a: var(--pr-font--size-body-p); */
 /*LINEHEIGHT*/
-  --primary--font-lineheight-display:  44px;
-  --primary--font-lineheight-body:     44px;
-  --primary--font-lineheight-p:        20px;
+  /* --pr-font--lineheight:          1.5;
+  --pr-font--lineheight-display:  var(--pr-font--lineheight);
+  --pr-font--lineheight-body:     var(--pr-font--lineheight);
+  --pr-font--lineheight-p:        var(--pr-font--lineheight); */
 /* COLOR */
-  --primary--font-color-h: 48px;
-  --primary--font-color-p: 40px;
-  --primary--font-color-a: 34px;
-  --primary--font-color-a--hover: 34px;
+  /* --pr-font--color-h: 48px;
+  --pr-font--color-p: 40px;
+  --pr-font--color-a: 34px;
+  --pr-font--color-a--hover: 34px; */
 /* WEIGHT */
-  --primary--font-fontweight-medium: Medium;
-  --primary--font-fontweight-bold: Bold;
-  --primary--font-fontweight-light: Light;
+  /* --pr-font--fontweight-medium: Medium;
+  --pr-font--fontweight-bold: Bold;
+  --pr-font--fontweight-light: Light; */
 }

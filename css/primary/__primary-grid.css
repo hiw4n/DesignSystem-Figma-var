@@ -1,0 +1,22 @@
+:root{
+    
+/*BREAKPOINT*/
+--pr-grid--breakpoint-xl:  1440px;  /* → desktop grande o pantalla ancha */
+--pr-grid--breakpoint-lg:  1200px;  /* → desktop */
+--pr-grid--breakpoint-md:  992px;   /* → laptop */
+--pr-grid--breakpoint-sm:  768px;   /* → tablet */
+--pr-grid--breakpoint-xs:  480px;   /* → móvil grande */
+--pr-grid--breakpoint-xxs: 320px;   /* → móvil pequeño */
+
+    
+/* GRID */
+--pr-grid--gutter: 16px;
+
+--pr-grid--columns: 12;
+--pr-grid--grap: 6px;
+
+--pr-grid--max-width: var(--pr-grid--breakpoint-xl);
+
+
+
+}
