@@ -1,0 +1,26 @@
+:root {
+  --font-cl--base: 1;
+  --font-cl--ratio: var(--pr-font-ratio, 1.25); /* 1.25 */
+  --font-cl--ratio-s: 0.75;
+  --font-cl--vw-min:320;
+  --font-cl--vw-max: 1440;  
+  --font-cl--vw-range: calc( var(--font-cl--vw-max) - var(--font-cl--vw-min) );
+
+  /* clamp(MÍNIMO, IDEAL, MÁXIMO) */
+
+  --font-size--p-max: 1rem;
+  --font-size--p-min: calc(var(--font-size--p-max) * var(--font-cl--ratio-s) * 1rem);
+
+
+
+  --font-cl--p: clamp( 0.75rem, calc(1rem + 1vw), 1.25rem );
+  --font-cl--p: clamp( var(--font-size--p-min), calc(1rem + 1vw), var(--font-size--p-max) );
+  --font-cl--p: clamp(1rem, 2vw, 1.5rem);
+
+
+
+
+
+
+}
+

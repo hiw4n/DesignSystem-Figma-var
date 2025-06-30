@@ -1,3 +1,9 @@
-@import url('./css/_grid.css');
-@import url('./css/_primary.css');
-@import url('./css/_token.css');
+/* PRIMARY */
+@import url('./css/__primary-grid.css');
+@import url('./css/__primary-color.css');
+@import url('./css/__primary-font.css');
+@import url('./css/__primary-font--clamp.css');
+
+/* TOKEN */
+@import url('./css/__token-font.css');
+
