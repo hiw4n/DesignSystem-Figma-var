@@ -1,0 +1,100 @@
+/* =========================================================================
+   Sistema tipográfico fluido (ratio 1.25)
+   Basta con tocar --font-base, --ratio, --vw-min o --vw-max y todo se adapta
+   ========================================================================= */
+:root {
+  --font-cl--base: 1;
+  /* Proporción modular para escalar los títulos p->h5->h4->h3,... Otra proporción recomendad: 1.333 proporción aurea*/
+  --font-cl--ratio: var(--pr-font-ratio, 1.25); /* 1.25 */
+  /* Ancho mínimo de viewport donde empieza a escalar (móvil) */
+  --font-cl--vw-min:320;
+  /* Ancho máximo de viewport donde termina de escalar (desktop) */
+  --font-cl--vw-max: 1440;  
+  /* Diferencia entre max y min, para calcular la pendiente de crecimiento */
+  --font-cl--vw-range: calc( var(--font-cl--vw-max) - var(--font-cl--vw-min) );
+  /* --font-cl--mobile-factor: Escala de reducción de tamaño de fuente, por defecto 0.75 (75%) */
+  /* -- Explicación: No es un valor mágico; es una regla empírica bastante extendida (entre 70 % y 80 %) en escalas tipográficas fluidas.*/
+  --font-cl--mobile-factor: 0.75;  /* 7~5 % en móvil */
+  /* CLamp -> --font-cl--size: clamp(MIN, FLUIDO, MAX); */
+  /* ---------- PASO 1: tamaños máximos (desktop) ---------------------- */
+    /* multiplicamos “a mano” porque ** (cáclulo potencia) no existe en CSS */
+    /* --font-cl--mobile-factor-n = calc( ratio^(n-1) ) --> ^ : potencia */
+    /* MAX = 1 rem × 1.25ⁿ --> clamp(..., MAX) --> FOR DESKTOP */
+    --font-cl--max-p:  var(--font-cl--base); /* --font-cl--scale ^ 0 */
+    --font-cl--max-h6: calc(var(--font-cl--base) * var(--font-cl--ratio)); /* (--font-cl--mobile-factor ^ 1) * (--font-cl--ratio) */
+    --font-cl--max-h5: calc(var(--font-cl--base) * var(--font-cl--ratio) * var(--font-cl--ratio)); /* (--font-cl--mobile-factor ^ 2) * (--font-cl--ratio) */
+    --font-cl--max-h4: calc(var(--font-cl--base) * var(--font-cl--ratio) * var(--font-cl--ratio) * var(--font-cl--ratio)); /* (--font-cl--mobile-factor ^ 3) * (--font-cl--ratio) */
+    --font-cl--max-h3: calc(var(--font-cl--base) * var(--font-cl--ratio) * var(--font-cl--ratio) * var(--font-cl--ratio) * var(--font-cl--ratio)) ; /* (--font-cl--mobile-factor ^ 4) * (--font-cl--ratio) */
+    --font-cl--max-h2: calc(var(--font-cl--base) * var(--font-cl--ratio) * var(--font-cl--ratio) * var(--font-cl--ratio) * var(--font-cl--ratio) * var(--font-cl--ratio)) ; /* (--font-cl--mobile-factor ^ 5) * (--font-cl--ratio) */
+    --font-cl--max-h1: calc(var(--font-cl--base) * var(--font-cl--ratio) * var(--font-cl--ratio) * var(--font-cl--ratio) * var(--font-cl--ratio) * var(--font-cl--ratio) * var(--font-cl--ratio)) ; /* (--font-cl--mobile-factor ^ 6) * (--font-cl--ratio) */
+    /* ---------- PASO 2: tamaños mínimos (móvil) ------------------------ */
+    /* MIN --> clamp(MIN,...) --> FOR MOBILE */
+    --font-cl--min-p:  calc(var(--font-cl--max-p)  * var(--font-cl--mobile-factor));
+    --font-cl--min-h6: calc(var(--font-cl--max-h6) * var(--font-cl--mobile-factor));
+    --font-cl--min-h5: calc(var(--font-cl--max-h5) * var(--font-cl--mobile-factor));
+    --font-cl--min-h4: calc(var(--font-cl--max-h4) * var(--font-cl--mobile-factor));
+    --font-cl--min-h3: calc(var(--font-cl--max-h3) * var(--font-cl--mobile-factor));
+    --font-cl--min-h2: calc(var(--font-cl--max-h2) * var(--font-cl--mobile-factor));
+    --font-cl--min-h1: calc(var(--font-cl--max-h1) * var(--font-cl--mobile-factor));
+    /* FLUID --> clamp( ..., FLUID ,...) */
+    /* FLUID --> SLOPE */
+    --font-cl--slope-p:  calc( calc(var(--font-cl--max-p)  - var(--font-cl--min-p))  / var(--font-cl--vw-range) * 100);
+    --font-cl--slope-h6: calc( calc(var(--font-cl--max-h6) - var(--font-cl--min-h6)) / var(--font-cl--vw-range) * 100);
+    --font-cl--slope-h5: calc( calc(var(--font-cl--max-h5) - var(--font-cl--min-h5)) / var(--font-cl--vw-range) * 100);
+    --font-cl--slope-h4: calc( calc(var(--font-cl--max-h4) - var(--font-cl--min-h4)) / var(--font-cl--vw-range) * 100);
+    --font-cl--slope-h3: calc( calc(var(--font-cl--max-h3) - var(--font-cl--min-h3)) / var(--font-cl--vw-range) * 100);
+    --font-cl--slope-h2: calc( calc(var(--font-cl--max-h2) - var(--font-cl--min-h2)) / var(--font-cl--vw-range) * 100);
+    --font-cl--slope-h1: calc( calc(var(--font-cl--max-h1) - var(--font-cl--min-h1)) / var(--font-cl--vw-range) * 100);
+    /* FLUID --> INTERCEPT */
+    --font-cl--intercept-p:  calc(var(--font-cl--min-p)  - (var(--font-cl--max-p)  - var(--font-cl--min-p))  / var(--font-cl--vw-range) * var(--font-cl--vw-min));
+    --font-cl--intercept-h6: calc(var(--font-cl--min-h6) - (var(--font-cl--max-h6) - var(--font-cl--min-h6)) / var(--font-cl--vw-range) * var(--font-cl--vw-min));
+    --font-cl--intercept-h5: calc(var(--font-cl--min-h5) - (var(--font-cl--max-h5) - var(--font-cl--min-h5)) / var(--font-cl--vw-range) * var(--font-cl--vw-min));
+    --font-cl--intercept-h4: calc(var(--font-cl--min-h4) - (var(--font-cl--max-h4) - var(--font-cl--min-h4)) / var(--font-cl--vw-range) * var(--font-cl--vw-min));
+    --font-cl--intercept-h3: calc(var(--font-cl--min-h3) - (var(--font-cl--max-h3) - var(--font-cl--min-h3)) / var(--font-cl--vw-range) * var(--font-cl--vw-min));
+    --font-cl--intercept-h2: calc(var(--font-cl--min-h2) - (var(--font-cl--max-h2) - var(--font-cl--min-h2)) / var(--font-cl--vw-range) * var(--font-cl--vw-min));
+    --font-cl--intercept-h1: calc(var(--font-cl--min-h1) - (var(--font-cl--max-h1) - var(--font-cl--min-h1)) / var(--font-cl--vw-range) * var(--font-cl--vw-min));
+
+    --font-cl--op-p:  calc(  var( (--font-cl--slope-p)  * 1vw ) + var( --font-cl--intercept-p)    );
+    --font-cl--op-h6: calc(  var( (--font-cl--slope-h6) * 1vw ) + var( --font-cl--intercept-h6 )  );
+    --font-cl--op-h5: calc(  var( (--font-cl--slope-h5) * 1vw ) + var( --font-cl--intercept-h5 )  );
+    --font-cl--op-h4: calc(  var( (--font-cl--slope-h4) * 1vw ) + var( --font-cl--intercept-h4 )  );
+    --font-cl--op-h3: calc(  var( (--font-cl--slope-h3) * 1vw ) + var( --font-cl--intercept-h3 )  );
+    --font-cl--op-h2: calc(  var( (--font-cl--slope-h2) * 1vw ) + var( --font-cl--intercept-h2 )  );
+    --font-cl--op-h1: calc(  var( (--font-cl--slope-h1) * 1vw ) + var( --font-cl--intercept-h1 )  );
+
+    --font-cl--op-iferror: calc( 10 * (1vw + 1vh) / 2 );
+
+    /* CLAMP END*/
+  --font-cl--p:  clamp(  var( --font-cl--min-p ) , var( --font-cl--op-iferror), var(--font-cl--max-p )  );
+  --font-cl--h6: clamp(  var( --font-cl--min-h6 ), var( --font-cl--op-iferror), var( --font-cl--max-h6 ));
+  --font-cl--h5: clamp(  var( --font-cl--min-h5 ), var( --font-cl--op-iferror), var( --font-cl--max-h5 ));
+  --font-cl--h4: clamp(  var( --font-cl--min-h4 ), var( --font-cl--op-iferror), var( --font-cl--max-h4 ));
+  --font-cl--h3: clamp(  var( --font-cl--min-h3 ), var( --font-cl--op-iferror), var( --font-cl--max-h3 ));
+  --font-cl--h2: clamp(  var( --font-cl--min-h2 ), var( --font-cl--op-iferror), var( --font-cl--max-h2 ));
+  --font-cl--h1: clamp(  var( --font-cl--min-h1 ), var( --font-cl--op-iferror), var( --font-cl--max-h1 ));
+  
+  --font-cl--p:  clamp( (var(--font-cl--min-p ) * 1rem), (var(-font-cl--max-p )   * 1rem) );
+  --font-cl--h6: clamp( (var(--font-cl--min-h6) * 1rem), (var(--font-cl--max-h6 ) * 1rem) );
+  --font-cl--h5: clamp( (var(--font-cl--min-h5) * 1rem), (var(--font-cl--max-h5 ) * 1rem) );
+  --font-cl--h4: clamp( (var(--font-cl--min-h4) * 1rem), (var(--font-cl--max-h4 ) * 1rem) );
+  --font-cl--h3: clamp( (var(--font-cl--min-h3) * 1rem), (var(--font-cl--max-h3 ) * 1rem) );
+  --font-cl--h2: clamp( (var(--font-cl--min-h2) * 1rem), (var(--font-cl--max-h2 ) * 1rem) );
+  --font-cl--h1: clamp( (var(--font-cl--min-h1) * 1rem), (var(--font-cl--max-h1 ) * 1rem) );
+ 
+  --font-cl--p :  clamp(0.75rem , calc(0.022vw + 0.679rem) , 1rem);
+  --font-cl--h6:  clamp(0.938rem, calc(0.028vw + 0.848rem), 1.25rem);
+  --font-cl--h5:  clamp(1.172rem, calc(0.035vw + 1.06rem) , 1.562rem);
+  --font-cl--h4:  clamp(1.465rem, calc(0.044vw + 1.325rem), 1.953rem);
+  --font-cl--h3:  clamp(1.831rem, calc(0.054vw + 1.657rem), 2.441rem);
+  --font-cl--h2:  clamp(2.289rem, calc(0.068vw + 2.071rem), 3.052rem);
+  --font-cl--h1:  clamp(2.861rem, calc(0.085vw + 2.589rem), 3.815rem);
+  
+  --font-cl--p :  clamp(0.75rem , (0.022vw + 0.679rem) , 1rem);
+  --font-cl--h6:  clamp(0.938rem, (0.028vw + 0.848rem), 1.25rem);
+  --font-cl--h5:  clamp(1.172rem, (0.035vw + 1.06rem) , 1.562rem);
+  --font-cl--h4:  clamp(1.465rem, (0.044vw + 1.325rem), 1.953rem);
+  --font-cl--h3:  clamp(1.831rem, (0.054vw + 1.657rem), 2.441rem);
+  --font-cl--h2:  clamp(2.289rem, (0.068vw + 2.071rem), 3.052rem);
+  --font-cl--h1:  clamp(2.861rem, (0.085vw + 2.589rem), 3.815rem);
+}
+

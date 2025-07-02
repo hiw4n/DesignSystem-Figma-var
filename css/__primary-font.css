@@ -1,20 +1,38 @@
 :root{
 /* Unid -> rem */
- --pr-font--size: 16px;
- 
+ --pr-font-size: 16px;
  --pr-font-ratio: 1.25; /* Ratio for scaling font sizes */
-
 /* FONTFAMILY*/
-  --pr-font--family-display:   var(--pr-font--family-body);
-  --pr-font--family-headline:  var(--pr-font--family-body);
-  --pr-font--family-body:      Raleway;
-  --pr-font--family-button:    Open Sans;
-  --pr-font--family-a:         var(--pr-font--family-body);
+  --pr-font-family-display:   var(--pr-font--family-body);
+  --pr-font-family-headline:  var(--pr-font--family-body);
+  --pr-font-family-body:      Raleway;
+  --pr-font-family-button:    Open Sans;
+  --pr-font-family-a:         var(--pr-font--family-body);
+  --bs-font-family-icon:      'font-Awesome-5-Free-Solid', 'Font Awesome 5 Free', 'Font Awesome 5', 'FontAwesome', 'FontAwesome5FreeSolid', 'FontAwesome5FreeSolidRegular', 'FontAwesome5FreeSolidLight', 'FontAwesome5FreeSolidThin', 'FontAwesome5FreeSolidBold', 'FontAwesome5FreeSolidBlack';
 /* SIZE */
-  /* font-size: clamp(MIN, IDEAL, MAX); */
-  /* Media -> clamp(MIN, (MIN + MAX)/2, MAX) */
-  /* Preciso -> clamp(MIN, SLOPE × vw + INTERCEPT, MAX) con regla de tres y pendiente*/
-  
+    --font-size: var(--pr-font--size);
+
+    --font-size--p: var(--font-cl--p);
+    --font-size--h6: calc( var(--font-size--p)  * var(--pr-font-ratio)) ; /* 1.333rem*/
+    --font-size--h5: calc( var(--font-size--h6) * var(--pr-font-ratio)) ; /* 1.777rem*/
+    --font-size--h4: calc( var(--font-size--h5) * var(--pr-font-ratio)) ; /* 2.369rem*/
+    --font-size--h3: calc( var(--font-size--h4) * var(--pr-font-ratio)) ; /* 3.157rem*/
+    --font-size--h2: calc( var(--font-size--h3) * var(--pr-font-ratio)) ; /* 4.209rem*/
+    --font-size--h1: calc( var(--font-size--h2) * var(--pr-font-ratio)) ; /* 5.610rem*/
+    
+    /* --font-size--p:  1rem;
+    --font-size--h6: 1.333rem;
+    --font-size--h5: 1.777rem;
+    --font-size--h4: 2.369rem;
+    --font-size--h3: 3.157rem;
+    --font-size--h2: 4.209rem;
+    --font-size--h1: 5.610rem; */
+    --font-size--p: var(--font-cl--p);
+    /* --font-size--p: clamp(1rem, 2vw, 1.5rem); */
+
+
+
+
   /*DISPLAY*/
   /* --pr-font--size-display-h1: 40px;
   --pr-font--size-display-h2: 32px;
